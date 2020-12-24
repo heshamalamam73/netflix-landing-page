@@ -71,7 +71,7 @@ function App() {
         )}
       </div>
       <div className="item">
-        <button onClick={handleShow} className='ask-btn'>Cos'e Netflix</button>
+        <button onClick={handleShow} className='ask-btn'>quanto costa netflix ?  </button>
         {toggleShow && (
           <p id='q1'>
           Netflix è un servizio di streaming che offre una varietà di serie TV, film, documentari pluripremiati e tanto altro su una vasta gamma di dispositivi connessi a Internet.
@@ -81,7 +81,7 @@ function App() {
         )}
       </div>
       <div className="item">
-        <button onClick={handleShow} className='ask-btn'>Cos'e Netflix</button>
+        <button onClick={handleShow} className='ask-btn'>dove posso guardare netflix ?</button>
         {toggleShow && (
           <p id='q1'>
           Netflix è un servizio di streaming che offre una varietà di serie TV, film, documentari pluripremiati e tanto altro su una vasta gamma di dispositivi connessi a Internet.
@@ -91,7 +91,7 @@ function App() {
         )}
       </div>
       <div className="item">
-        <button onClick={handleShow} className='ask-btn'>Cos'e Netflix</button>
+        <button onClick={handleShow} className='ask-btn'>come posso disdire ?</button>
         {toggleShow && (
           <p id='q1'>
           Netflix è un servizio di streaming che offre una varietà di serie TV, film, documentari pluripremiati e tanto altro su una vasta gamma di dispositivi connessi a Internet.
@@ -101,7 +101,7 @@ function App() {
         )}
       </div>
       <div className="item">
-        <button onClick={handleShow} className='ask-btn'>Cos'e Netflix</button>
+        <button onClick={handleShow} className='ask-btn'>come posso guardare su netflix?</button>
         {toggleShow && (
           <p id='q1'>
           Netflix è un servizio di streaming che offre una varietà di serie TV, film, documentari pluripremiati e tanto altro su una vasta gamma di dispositivi connessi a Internet.
