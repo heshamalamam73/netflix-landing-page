@@ -6,7 +6,7 @@ $primary_color: #e50914;
 $dark_color : #141414;
 $light_color : #f4f4f4;
 
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -18,18 +18,21 @@ body {
     color: #998;
     font-family: 'Open Sans', sans-serif;
 }
-ul{
+ul {
     list-style: none;
 }
-h1,h2,h3,h4,h5{
+h1,
+h2,
+h3,
+h4,
+h5 {
     color: #fff;
 }
-a{
+a {
     color: #fff;
     text-decoration: none
-
 }
-img{
+img {
     width: 100%;
     object-fit: cover;
 }
@@ -44,36 +47,37 @@ img{
     transition: opacity 0.2s ease-in;
     cursor: pointer;
     outline: none;
-    box-shadow: 0 1px 0 rgba (0,0,0,0.40);
+    box-shadow: 0 1px 0 rgba (0, 0, 0, 0.40);
     color: #fff;
-    &:hover{
+&:hover {
         opacity: 0.9;
     }
 }
-.form{
+.form {
     display: flex;
     justify-content: center;
     width: 60%;
     justify-content: center;
     margin: 0 auto;
-    input{
+input {
         outline: none;
         width: 100%;
-        padding: 20px;   
+        padding: 20px;
     }
-    button{
+button {
         width: 150px;
         letter-spacing: 2px;
         color: #fff;
 
     }
 }
-.hero{
+.hero {
     width: 100%;
     min-height: 100vh;
     position: relative;
-    background : url('https://i.ibb.co/vXqDmnh/background.jpg') no-repeat center center/cover;
-    &::after{
+    background: url('https://i.ibb.co/vXqDmnh/background.jpg') no-repeat center center/cover;
+
+    &::after {
         content: "";
         position: absolute;
         top: 0%;
@@ -81,10 +85,10 @@ img{
         width: 100%;
         height: 100%;
         z-index: 1;
-        background: rgba(0,0,0,0.7);
+        background: rgba(0, 0, 0, 0.7);
         box-shadow: inset 120px 100px 250px #000000, inset -120px -100px 250px #000000;
     }
-    .hero-top{
+.hero-top {
         position: relative;
         z-index: 2;
         height: 80px;
@@ -94,11 +98,11 @@ img{
         align-items: center;
         align-content: center;
         padding: 0px 40px;
-        img{
+img {
             width: 140px;
         }
     }
-    .hero-content{
+.hero-content {
         position: relative;
         z-index: 2;
         margin: auto;
@@ -108,39 +112,42 @@ img{
         align-items: center;
         text-align: center;
         margin-top: 9rem;
-        h1{
+h1 {
             font-weight: 800;
             font-size: 3rem;
             margin: 0 0 10px;
         }
-        h2{
+h2 {
             font-weight: 800;
             margin: 0 0 10px;
         }
-        p{
+p {
             font-weight: bolder;
             font-size: 20px;
             margin: 0 0 10px;
         }
-  
+
     }
 
 }
-.tabs{
-padding-top: 20px;
-    .tab-item{
+.tabs {
+    padding-top: 20px;
+.tab-item {
         display: flex;
         flex-direction: row;
         border-top: 8px solid $dark_color;
         margin: auto;
         justify-content: space-between;
         align-items: center;
-        padding:0px 100px;
-        p{
+        padding: 0px 100px;
+
+        p {
             font-size: 1.2rem;
-            color:$light_color;
+            color: $light_color;
             padding: 30px;
-            strong{
+            flex-shrink: 5;
+
+            strong {
                 display: block;
                 font-weight: 700;
                 font-size: 2rem;
@@ -148,22 +155,43 @@ padding-top: 20px;
 
             }
         }
-        img{
-         
+
+        .video {
             flex-basis: 60%;
+            position: relative;
+            min-height: 500px;
+            max-width: 100%;
+
+            background: url("https://assets.nflxext.com/ffe/siteui/acquisition/ourStory/fuji/desktop/tv.png") no-repeat center/cover;
+
+            .img-cover {
+                width: 100%;
+                height: 100%;
+
+                .my-video {
+                    position: absolute;
+                    z-index: -1;
+                    display: block;
+                    object-fit: contain;
+                }
+
+            }
         }
-        &:nth-child(2){
+&:nth-child(2) {
             flex-direction: row-reverse;
+img {
+    flex-basis: 60%;
+}
         }
-        &:last-child{
+&:last-child {
             border-bottom: 8px solid $dark_color;
 
         }
-     
+
     }
-    
+
 }
-.ask-btn{
+.ask-btn {
     background: none;
     border: none;
     font-size: 20px;
@@ -175,35 +203,35 @@ padding-top: 20px;
     border-bottom: 8px solid $dark_color;
     padding: 20px;
 
-    h2{
+    h2 {
         padding: 10px;
         font-size: 3rem;
         text-align: center;
     }
-    p{
+p {
         text-align: center;
         margin: 20px;
         font-size: 1.2rem;
         font-weight: bolder;
     }
-    .item{
+.item {
         max-width: 700px;
         margin: 5px auto;
         background-color: $dark_color;
- 
+
         padding: 20px;
-      
-        span{
+
+        span {
             display: block;
             font-size: 2rem;
             &:active p {
                 display: block;
             }
         }
-     
-       
+
+
     }
- 
+
 }
 .footer {
     max-width: 70%;
@@ -211,18 +239,18 @@ padding-top: 20px;
     font-size: 0.9rem;
     margin: 0 auto;
     padding: 40px 0;
-    .select{
-        padding:10px 20px;
+.select {
+    padding: 10px 20px;
         background-color: $dark_color;
         color: $light_color;
         margin: 10px 0;
     }
-    
+
     p {
         margin: 1.5rem;
-        
+
     }
- 
+
     .lang-select {
         margin-top: 2rem;
         color: #999;
@@ -236,70 +264,73 @@ padding-top: 20px;
         display: grid;
         grid-template-columns: repeat(4, 1fr);
         grid-gap: 2rem;
-        ul{
+ul {
             li {
                 line-height: 1.9;
             }
         }
     }
 }
-@media(max-width:950px){
-    .footer{
-        .footer-cols{
+@media(max-width:950px) {
+    .footer {
+        .footer-cols {
             justify-content: center;
             align-items: center;
-       
-            grid-template-columns: repeat(2, 1fr);        }
+
+            grid-template-columns: repeat(2, 1fr);
+            }
     }
-    .form{
+.form {
         flex-direction: column;
         padding: 10px;
         text-align: center;
         align-items: center;
         overflow: hidden;
         width: 90%;
-  
-  
-        button{
+
+
+        button {
             margin-top: 20px;
         }
-      
-        
+
+
 
     }
-    .hero{
-        .hero-top{
-            img{
+.hero {
+    .hero-top {
+        img {
                 width: 90px;
             }
-            .btn{
+.btn {
                 padding: 5px 10px;
                 font-size: 14px;
             }
         }
-        .hero-content{
-            padding:0 5px;
-            h1{
+.hero-content {
+    padding: 0 5px;
+
+    h1 {
                 font-size: 2.5rem;
-               
+
             }
-            p{
+p {
                 font-size: 1rem;
             }
-      
+
         }
     }
-    .tabs{
-        .tab-item{
-            flex-direction: column;
+.tabs {
+    .tab-item {
+        flex-direction: column !important;
+        display: inline-block;
             text-align: center;
             justify-content: center;
             padding: 0px 20px;
-            p{
+p {
                 padding: 15px;
             }
-          
-            &:nth-child(2){
+
+            &:nth-child(2) {
                 flex-direction: column;
 
             }

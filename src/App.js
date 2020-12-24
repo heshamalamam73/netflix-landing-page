@@ -1,6 +1,9 @@
 import Tv from './img/tv.png'
 import Mobile from './img/mobile.jpg'
 import Devices from './img/devices.png' 
+import Vid1 from './img/vid1.m4v'
+import Vid2 from './img/vid2.m4v'
+
 import { useEffect, useState } from 'react';
 
 function App() {
@@ -30,7 +33,7 @@ function App() {
           <p>Vuoi guardare Netflix? Inserisci l'indirizzo email per abbonarti o riattivare il tuo abbonamento.</p>
           <form className='form'>
             <input type="text" name=" email" id="" placeholder="Indirizzo email " />
-            <button className="btn">Inizia > </button>
+            <button className="btn">Inizia  </button>
           </form>
         </div>
     </header>
@@ -40,7 +43,17 @@ function App() {
           <strong>   Goditi Netflix sulla tua TV.</strong>
         Guarda Netflix su smart TV, Playstation, Xbox, Chromecast, Apple TV, lettori Blu-ray e molti altri dispositivi.
         </p>
-        <img src={Tv} alt=""/>
+          <div className="video">
+            <div className="img-cover">
+              <video className='my-video' autoPlay loop width="100%" height="100%">
+                <source src={Vid2} />
+              </video>
+            </div>
+
+
+
+          </div>
+
         </div>
         <div className="tab-item">
         <p>
@@ -55,7 +68,13 @@ function App() {
           <strong>Guarda Netflix ovunque.</strong>
           Cellulare, tablet, laptop e TV: scegli tu cosa usare per guardare in streaming film e serie TV senza limiti e senza spendere di più.
         </p>
-        <img src={Devices} alt=""/>
+          <div className="video">
+            <div className="img-cover">
+              <video className='my-video' autoPlay loop width="100%" height="100%">
+                <source src={Vid1} />
+              </video>
+            </div>
+          </div>
         </div>
     </section>
     <section className="domande">
@@ -115,7 +134,7 @@ function App() {
 
       <form className='form'>
             <input type="text" name=" email" id="" placeholder="Indirizzo email " />
-            <button className="btn">Inizia > </button>
+          <button className="btn">Inizia  </button>
           </form>
 
     </section>
